@@ -45,6 +45,7 @@
     "uglify-js": "~2.4.3"
   },
   "scripts": {
+    "prepublish": "npm run build:prod",
     "build:config": "node scripts/buildConfig.js",
     "build:prepare": "npm run build:config && rake test:conformance:prepare",
     "build": "rimraf dist && rollup -c",
@@ -59,6 +60,6 @@
     "@babel/runtime": "^7.3.1",
     "core-js": "^2.5.0",
     "punycode": "1.4.1",
-    "twemoji-parser": "^11.0.2"
+    "twemoji-parser": "^14.0.0"
   }
 }
